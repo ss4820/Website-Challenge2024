@@ -1,27 +1,78 @@
 /* General body styling */
 body {
-    font-family: 'Arial', sans-serif; /* You can choose any font that you like */
-    line-height: 1.6; /* This gives a bit more space between lines of text */
-    color: #333; /* Sets the default text color */
-    background-color: #f4f4f4; /* Sets a light grey background color */
+    font-family: 'Tahoma', sans-serif;
+    line-height: 1.9;
+    color: #110e0e;
+    background-color: hsl(287, 24%, 70%);
   }
   
-  /* Header styles */
+  
   header {
-    background: #3dde5b;
-    color: #8364f1;
-    padding: 1rem 0;
-    text-align: center;
-  }
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-top {
+    align-self: flex-start; /* Aligns the top content to the start (top) */
+    width: 100%;
+    text-align: center; /* Centers the text */
+}
+
+.header-middle {
+    width: 100%; /* Ensures the middle content takes full width for centering */
+    display: flex;
+    justify-content: center; /* Centers the brand logo and name */
+    margin: 10px 0; /* Adds some space above and below */
+}
+
+.header-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Separates the nav and brochures */
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 20px; /* Spacing between nav items */
+}
+
+.brochure-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brochure-links a {
+    margin-left: 20px; /* Spacing between brochure links */
+}
+
+
+
   /* Menu Section Styles */
 section {
     margin-bottom: 2rem;
   }
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
   
   /* Menu Item Styles */
   .menu-item {
-    background-color: #f8f8f8;
+    background-color: #d1d3cc;
     border-radius: 8px;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -29,12 +80,12 @@ section {
   }
   
   .menu-item h3 {
-    color: #333;
+    color: #f0f6f0;
     margin-bottom: 0.5rem;
   }
   
   .menu-item p {
-    color: #666;
+    color: #e5ebe4;
   }
   
   /* Booster List Styles */
@@ -42,8 +93,7 @@ section {
     background-color: #e9e9e9;
     border: 1px solid #ccc;
     border-radius: 4px;
-    display: inline-block;
-    margin: 0.5rem;
+    margin: 1rem;
     padding: 0.5rem 1rem;
   }
   
@@ -54,12 +104,21 @@ section {
   }
   
   .navbar-brand {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
   }
+  
+  .navbar-brand img {
+    height: 100px; /* Adjust based on your logo's size */
+  }
+  
   
   .nav {
     list-style: none;
   }
+  
   
   .nav-link {
     color: #fff;
@@ -68,15 +127,51 @@ section {
   }
   
   .nav-link:hover {
-    background-color: #555;
+    background-color: #d9d0d0;
   }
   
   /* Main styles */
   main {
-    padding: 1rem;
-    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px; 
+    background: #ddd8d8;
+    background-size: cover;
+    background-position: center;
+}
+
+#boosters {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+#smoothies {
+    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)),url(/Users/shrutisekharan/Documents/GitHub/Website-Challenge2024/414-coco-verde.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #0c0c0c; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
   }
   
+  
+  #bowls {
+    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)), url(/Users/shrutisekharan/Documents/GitHub/Website-Challenge2024/food.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: #0b0b0b; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+/* Section style
+  ß
   section {
     margin-bottom: 1rem;
   }
@@ -89,26 +184,39 @@ section {
   
   /* Footer styles */
   footer {
-    background: #333;
-    color: #fff;
+    background: #dde3e0;
+    color: #020105;
     text-align: center;
     padding: 1rem 0;
   }
 
-  /* Base mobile styles here */
+
 
 /* Tablet and desktop styles */
+
 @media (min-width: 768px) {
-  .menu-item,  .booster-item, {
-      /* Adjust padding, margins, font-sizes for larger screens */
+    main {
+
+        grid-template-columns: repeat(3, 1fr);
     }
-  
-    /* Adjust layout for larger screens */
-    /* You could use a grid or flexbox to layout your menu items in rows and columns */
-    section {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+
+    .nav-item {
+        display: inline-block; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 0.5rem;
+    }
+
+    .nav-item {
+        display: block; 
     }
 }
 
