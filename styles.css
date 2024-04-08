@@ -15,22 +15,21 @@ body {
 }
 
 .header-top {
-    align-self: flex-start; /* Aligns the top content to the start (top) */
+    align-self: flex-start; 
     width: 100%;
-    text-align: center; /* Centers the text */
+    text-align: center; 
 }
 
 .header-middle {
-    width: 100%; /* Ensures the middle content takes full width for centering */
-    display: flex;
-    justify-content: center; /* Centers the brand logo and name */
-    margin: 10px 0; /* Adds some space above and below */
+    width: 100%; 
+    justify-content: center; 
+    margin: 10px 0; 
 }
 
 .header-bottom {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Separates the nav and brochures */
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -112,11 +111,11 @@ section ul {
   }
  
   .navbar-brand span {
-    font-size: 2rem; /* Adjust this value as needed */
+    font-size: 2rem; 
 }
 
   .navbar-brand img {
-    height: 100px; /* Adjust based on your logo's size */
+    height: 100px; 
   }
   
   
