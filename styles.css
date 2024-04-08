@@ -153,7 +153,7 @@ section ul {
     text-align: center; 
   }
 #smoothies {
-    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)),url(/Users/shrutisekharan/Documents/GitHub/Website-Challenge2024/414-coco-verde.jpg);
+    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)),url(414-coco-verde.jpg);
     background-size: cover;
     background-position: center;
     color: #0c0c0c; 
@@ -165,7 +165,7 @@ section ul {
   
   
   #bowls {
-    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)), url(/Users/shrutisekharan/Documents/GitHub/Website-Challenge2024/food.jpg);
+    background: linear-gradient(rgba(219, 202, 202, 0.5), rgba(237, 216, 216, 0.5)), url(food.jpg);
     background-size: cover;
     background-position: bottom;
     color: #0b0b0b; 
