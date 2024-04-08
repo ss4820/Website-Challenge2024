@@ -1,9 +1,9 @@
 /* General body styling */
 body {
     font-family: 'Tahoma', sans-serif;
-    line-height: 1.9;
+    line-height: 2.9;
     color: #110e0e;
-    background-color: hsl(287, 24%, 70%);
+    background-color: hsl(287, 33%, 76%);
   }
   
   
@@ -108,8 +108,13 @@ section ul {
     align-items: center; 
     justify-content: center; 
     gap: 10px; 
+    font-size: 2rem; 
   }
-  
+ 
+  .navbar-brand span {
+    font-size: 2rem; /* Adjust this value as needed */
+}
+
   .navbar-brand img {
     height: 100px; /* Adjust based on your logo's size */
   }
